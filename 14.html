@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //날짜와 시간 정보를 갖고있는 만들어져있는 함수
+        var nowDate = new Date();
+
+        var year = nowDate.getFullYear();
+        var month = nowDate.getMonth() + 1;
+        var date = nowDate.getDate();
+        var day = nowDate.getDay();
+        var hours = nowDate.getHours();
+        var minutes = nowDate.getMinutes();
+        var seconds = nowDate.getSeconds();
+
+        var dayStr = "";
+        if(day == 0){
+            dayStr = "일";
+        }
+        else if(day == 1){
+            dayStr = "월";
+        }
+        else if(day == 0){
+            dayStr = "화";
+        }
+        else if(day == 0){
+            dayStr = "수";
+        }
+        else if(day == 0){
+            dayStr = "목";
+        }
+        else if(day == 0){
+            dayStr = "금";
+        }
+        else{
+            dayStr = "토";
+        }
+        alert(year + "년 " + month + "월 " + date + "일 " + dayStr + "요일 " + hours + "시 " + minutes + "분 " + seconds + "초");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
